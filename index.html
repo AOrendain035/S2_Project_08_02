@@ -39,8 +39,14 @@
     </header>
 
     <section>
+
+        <!-- For the, extensive, amount of code underneath (<table> to </table>) I created a table that will display a sudoku puzzle.-->
         <table class="spuzzle">
+
+            <!-- First, I added a caption to the table; the caption will appear at the top and it reads "Sudoku". -->
             <caption>Sudoku</caption>
+
+            <!-- Next, I created a table header cell group that will contain all of the sudoku numbers, 1-9. -->
             <thead>
                 <tr>
                     <th></th>
@@ -55,7 +61,11 @@
                     <th>9</th>
                 </tr>
             </thead>
+
+            <!-- Then, I skipped adding in a table foot element and went straight to the table body. -->
             <tbody>
+
+                <!-- For the body, I created 9 distinct rows, one for each letter. Some of the rows I need to span 3 columns/rows so that I could create 9 seperate boxes; 5 green and 4 gold. The rows that I created these boxes with are A, D, and G. In each of these boxes, I added in data cells so that a real sudoku table would form. I even added some numbers into some of the data cells so that the user would be able to know how to play this specific sudoku puzzle. -->
                 <tr>
                     <th>A</th>
                     <td rowspan="3" colspan="3" class="greenBox">
@@ -80,37 +90,37 @@
                     <td rowspan="3" colspan="3" class="goldBox">
                         <table class="subTable">
                             <tr>
+                                <td>5</td>
+                                <td></td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>6</td>
                                 <td></td>
-                                <td>9</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>7</td>
-                                <td>2</td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </table>
                     </td>
                     <td rowspan="3" colspan="3" class="greenBox">
                         <table class="subTable">
                             <tr>
-                                <td>3</td>
-                                <td>5</td>
+                                <td></td>
+                                <td>7</td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>5</td>
+                                <td>1</td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>3</td>
-                                <td>5</td>
+                                <td>2</td>
+                                <td></td>
                                 <td></td>
                             </tr>
                         </table>
@@ -132,52 +142,52 @@
                                 <td></td>
                             </tr>
                             <tr>
+                                <td>6</td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>9</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>4</td>
+                                <td>7</td>
+                                <td>2</td>
                             </tr>
                         </table>
                     </td>
                     <td rowspan="3" colspan="3" class="greenBox">
                         <table class="subTable">
                             <tr>
-                                <td>6</td>
                                 <td></td>
-                                <td>9</td>
+                                <td>2</td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td>6</td>
                                 <td></td>
-                                <td>9</td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td>6</td>
                                 <td></td>
                                 <td>9</td>
+                                <td></td>
                             </tr>
                         </table>
                     </td>
                     <td rowspan="3" colspan="3" class="goldBox">
                         <table class="subTable">
                             <tr>
-                                <td>4</td>
+                                <td>9</td>
+                                <td>3</td>
                                 <td>7</td>
-                                <td>2</td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>7</td>
-                                <td>2</td>
+                                <td></td>
+                                <td>8</td>
                             </tr>
                             <tr>
-                                <td>4</td>
-                                <td>7</td>
-                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </table>
                     </td>
@@ -199,13 +209,13 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td>1</td>
+                                <td>4</td>
+                                <td>5</td>
                             </tr>
                             <tr>
                                 <td></td>
+                                <td>6</td>
                                 <td></td>
-                                <td>1</td>
                             </tr>
                         </table>
                     </td>
@@ -213,18 +223,18 @@
                         <table class="subTable">
                             <tr>
                                 <td></td>
-                                <td>4</td>
-                                <td>5</td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>4</td>
-                                <td>5</td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
+                                <td>8</td>
                                 <td></td>
-                                <td>4</td>
-                                <td>5</td>
+                                <td>1</td>
                             </tr>
                         </table>
                     </td>
@@ -232,17 +242,17 @@
                         <table class="subTable">
                             <tr>
                                 <td></td>
-                                <td>6</td>
-                                <td></td>
+                                <td>5</td>
+                                <td>2</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>6</td>
+                                <td></td>
                                 <td></td>
                             </tr>
                             <tr>
+                                <td>7</td>
                                 <td></td>
-                                <td>6</td>
                                 <td></td>
                             </tr>
                         </table>

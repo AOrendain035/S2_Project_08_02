@@ -13,8 +13,53 @@
 
 */
 
+/* Underneath, I have created styles that will affect the overall table. First, I added styles so that the table itself would have collapsed borders, meaning that it's borders wouldn't appear sepperated by a space and would instead sort of merge into one border. Then, I centered the table by clearing the margin and giving it automatic margin sizes for its left and right sides. Finally, I gave the overral table a width of 90% */
 /* Table Styles */
+table.spuzzle {
+    border-collapse: collapse;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 
+/* In the 2 lines of code underneath, I just gave data cell elements a grey border that is 5 pixels wide; the width of each data cell was also set to 33.3% so that each cell would be uniform in width. */
+td {
+    border: 5px outset grey;
+    width: 33.3%;
+}
 
+/* Underneath, I gave header cells a font color of grey and gave their bottom and right padding a space of 10 pixels so that each one is equidistant from the ones right next to it.*/
+th {
+    color: grey;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
 
+/* In the chunk of code underneath, I added styles that will affect the sub table and the elements it contains. First, I collapsed the borders so that it has the aforementioned effect; essentially, the borders of the sub table wouldn't appear as if they were seperated by a space, and instead would "merge" into one border. Then, I gave the sub table a width of 100% so that it would take up the entire space allotted. */
 /* Inner Table Styles */
+table.subTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Next, for data cells within the sub table, I gave them a box shadow, black border, and font color of blue, just to add to the looks of its content. I also gave each data cell a height of 40px so that each data cell would be uniform in height. Finally, I centered the cell and its content. */
+table.subTable td {
+    box-shadow: 0px 0px 15px inset;
+    border: 1px solid black;
+    color: blue;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Then, I gave the data cells within the specific 4 boxeswith the class of "goldBox" a background color of gold, hence the name of the class. */
+td.goldBox td {
+    background-color: rgb(228, 199, 42);
+}
+
+/* Finally, I gave the data cells of the other 5 boxes with the class of "greenBox" a background color of green. Aqlso, hence the name. */
+td.greenBox td {
+    background-color: rgb(203, 229, 130);
+}
